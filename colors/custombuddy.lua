@@ -6,8 +6,10 @@ local g = colorbuddy.groups
 local s = colorbuddy.styles
 
 -- Define colors
-Color.new("white", "#ffffff")  -- White background for the status line
-Color.new("black", "#000000")  -- Black text for the status line
+Color.new("white", "#ffffff")          -- White for cursor or highlights
+Color.new("silver", "#c0c0c0")         -- Silver for backgrounds
+Color.new("blackgray", "#444444")      -- Black-gray for text or subtle highlights
+Color.new("black", "#000000")          -- Pure black for text
 Color.new("red", "#cc6666")
 Color.new("pink", "#fef601")
 Color.new("green", "#99cc99")
@@ -19,15 +21,19 @@ Color.new("purple", "#8e6fbd")
 Color.new("violet", "#b294bb")
 Color.new("orange", "#de935f")
 Color.new("brown", "#a3685a")
-Color.new("gray", "#666666")   -- Gray for inactive status line text
-Color.new("background", "#111111")  -- Default background
+Color.new("gray", "#666666")           -- Gray for inactive status line text
+Color.new("background", "#111111")    -- Default editor background
 
--- Define highlight groups
+-- Editor normal colors
 Group.new("Normal", c.white, c.background)
 
--- Status Line colors
-Group.new("StatusLine", c.black, c.white, s.bold) -- Active status line: black text, white background
-Group.new("StatusLineNC", c.gray, c.white)       -- Inactive status line: gray text, white background
+-- Status Line
+Group.new("StatusLine", c.black, c.silver, s.bold) -- Active status line: black text, silver background
+Group.new("StatusLineNC", c.gray, c.silver)       -- Inactive status line: gray text, silver background
+
+-- Line Numbers
+Group.new("LineNr", c.silver, c.background)           -- Default line numbers: silver text on editor background
+Group.new("CursorLineNr", c.white, c.background, s.bold) -- Line number under cursor: white text on editor background
 
 -- Syntax and highlights
 Group.new("@constant", c.orange, nil, s.none)
@@ -40,8 +46,8 @@ Group.new("@variable", c.white, nil)
 Group.new("@variable.builtin", c.purple:light():light(), g.Normal)
 
 -- Cursor line
-Group.new("CursorLine", nil, c.gray)
-Group.new("CursorLineNr", c.yellow, c.gray)
+Group.new("CursorLine", nil, c.gray)  -- Highlight the current line
+Group.new("CursorLineNr", c.white, c.background)  -- Current line number
 
 -- Visual mode
 Group.new("Visual", nil, c.gray)
