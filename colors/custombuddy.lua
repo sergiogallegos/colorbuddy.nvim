@@ -40,6 +40,12 @@ Group.new("Normal", c.superwhite, c.gray0)
 Group.new("StatusLine", c.black, c.silver) -- Active status line: black text, less bright silver background
 Group.new("StatusLineNC", c.silver_text, c.darkgray, s.bold) -- Inactive status line: silver text, dark gray background, bold
 
+-- Insert, Command, and Visual modes on StatusLine
+Group.new("StatusLineInsert", c.black, c.silver) -- Insert mode: same as active StatusLine
+Group.new("StatusLineCommand", c.black, c.silver) -- Command mode: same as active StatusLine
+Group.new("StatusLineVisual", c.black, c.silver) -- Visual mode: same as active StatusLine
+
+-- Syntax and highlights
 Group.new("@constant", c.orange, nil, s.none)
 Group.new("@function", c.yellow, nil, s.none)
 Group.new("@function.bracket", g.Normal, g.Normal)
