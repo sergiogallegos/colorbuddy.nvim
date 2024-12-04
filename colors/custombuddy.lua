@@ -35,7 +35,7 @@ Group.new("LineNr", c.darkgray, c.background)         -- Default line numbers: d
 Group.new("CursorLineNr", c.orange, c.background, s.bold) -- Line number under cursor: orange text on editor background
 
 -- NonText (e.g., `~` symbols in empty lines)
-Group.new("NonText", c.darkgray, c.background) -- Same color as line numbers
+Group.new("NonText", c.darkgray, c.background) -- Set `~` symbols to dark gray on editor background
 
 -- Syntax and highlights
 Group.new("@constant", c.orange, nil, s.none)
