@@ -20,18 +20,15 @@ Color.new("orange", "#de935f")
 Color.new("brown", "#a3685a")
 
 Color.new("background", "#111111")
-Color.new("gray", "#666666") -- Add gray color
-Color.new("gray0", "#333333") -- A darker gray, optional
+Color.new("gray", "#666666") -- Add gray background color for the status line
+Color.new("whitegray", "#333333") -- Darker gray for inactive status lines
 
--- Apply groups to define the theme
+-- Define the status line groups
+Group.new("StatusLine", c.white, c.gray, s.bold) -- Active status line with gray background
+Group.new("StatusLineNC", c.white, c.whitegray, s.none) -- Inactive status line with darker gray background
+
+-- Existing groups
 Group.new("Normal", c.white, c.background)
-Group.new("StatusLine", c.gray, c.background, s.bold) -- Status Line with gray foreground
-Group.new("StatusLineNC", c.gray, c.background)      -- Inactive Status Line
-Group.new("CursorLine", nil, c.gray0)
-Group.new("CursorLineNr", c.yellow, c.gray0)
-Group.new("Visual", nil, c.gray)
-
--- Remaining groups stay the same
 Group.new("@constant", c.orange, nil, s.none)
 Group.new("@function", c.yellow, nil, s.none)
 Group.new("@keyword", c.violet, nil, s.none)
