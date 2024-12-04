@@ -36,7 +36,7 @@ Color.new("gray0", background_string)
 Group.new("Normal", c.superwhite, c.gray0)
 
 -- Status Line modifications
-Group.new("StatusLine", c.black, c.silver, s.bold) -- Active status line: black text, silver-white background, bold
+Group.new("StatusLine", c.black, c.silver, s.none) -- Active status line: black text, silver-white background, no bold
 Group.new("StatusLineNC", c.silver, c.darkgray, s.bold) -- Inactive status line: silver text, dark gray background, bold
 
 Group.new("@constant", c.orange, nil, s.none)
