@@ -9,6 +9,7 @@ local s = colorbuddy.styles
 
 -- Define colors (copied from GruvBuddy)
 Color.new("white", "#f2e5bc")
+Color.new("black", "#000000")          -- Black text for the status line
 Color.new("red", "#cc6666")
 Color.new("pink", "#fef601")
 Color.new("green", "#99cc99")
@@ -36,8 +37,8 @@ Color.new("silver_white", "#d3d3d3") -- Define silver-white for status line back
 Group.new("Normal", c.superwhite, c.gray0)
 
 -- Status Line modifications
-Group.new("StatusLine", c.superwhite, c.silver_white, s.bold) -- Active status line: silver-white background
-Group.new("StatusLineNC", c.gray0, c.silver_white)           -- Inactive status line: silver-white background
+Group.new("StatusLine", c.black, c.silver_white, s.bold) -- Active status line: black text, silver-white background
+Group.new("StatusLineNC", c.black, c.silver_white)       -- Inactive status line: black text, silver-white background
 
 Group.new("@constant", c.orange, nil, s.none)
 Group.new("@function", c.yellow, nil, s.none)
@@ -50,4 +51,3 @@ Group.new("@variable.builtin", c.purple:light():light(), g.Normal)
 
 -- I've always liked lua function calls to be blue. I don't know why.
 Group.new("@function.call.lua", c.blue:dark(), nil, nil)
-
