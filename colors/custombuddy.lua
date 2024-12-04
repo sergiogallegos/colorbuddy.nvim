@@ -11,7 +11,8 @@ local s = colorbuddy.styles
 Color.new("white", "#f2e5bc")
 Color.new("black", "#000000")          -- Black text for the status line
 Color.new("darkgray", "#333333")       -- Dark gray for inactive status line background
-Color.new("silver", "#d3d3d3")         -- Silver for inactive font and active background
+Color.new("silver", "#bbbbbb")         -- Less bright silver for active status line background
+Color.new("silver_text", "#d3d3d3")    -- Silver text for inactive status line
 Color.new("red", "#cc6666")
 Color.new("pink", "#fef601")
 Color.new("green", "#99cc99")
@@ -36,8 +37,8 @@ Color.new("gray0", background_string)
 Group.new("Normal", c.superwhite, c.gray0)
 
 -- Status Line modifications
-Group.new("StatusLine", c.black, c.silver, s.none) -- Active status line: black text, silver-white background, no bold
-Group.new("StatusLineNC", c.silver, c.darkgray, s.bold) -- Inactive status line: silver text, dark gray background, bold
+Group.new("StatusLine", c.black, c.silver) -- Active status line: black text, less bright silver background
+Group.new("StatusLineNC", c.silver_text, c.darkgray, s.bold) -- Inactive status line: silver text, dark gray background, bold
 
 Group.new("@constant", c.orange, nil, s.none)
 Group.new("@function", c.yellow, nil, s.none)
