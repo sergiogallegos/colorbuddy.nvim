@@ -10,6 +10,8 @@ local s = colorbuddy.styles
 -- Define colors (copied from GruvBuddy)
 Color.new("white", "#f2e5bc")
 Color.new("black", "#000000")          -- Black text for the status line
+Color.new("darkgray", "#333333")       -- Dark gray for inactive status line background
+Color.new("silver", "#d3d3d3")         -- Silver for inactive font and active background
 Color.new("red", "#cc6666")
 Color.new("pink", "#fef601")
 Color.new("green", "#99cc99")
@@ -30,15 +32,12 @@ local background_string = "#111111"
 Color.new("background", background_string)
 Color.new("gray0", background_string)
 
--- Silver-white background for the status line
-Color.new("silver_white", "#d3d3d3") -- Define silver-white for status line background
-
 -- Highlight groups
 Group.new("Normal", c.superwhite, c.gray0)
 
 -- Status Line modifications
-Group.new("StatusLine", c.black, c.silver_white, s.bold) -- Active status line: black text, silver-white background
-Group.new("StatusLineNC", c.black, c.silver_white)       -- Inactive status line: black text, silver-white background
+Group.new("StatusLine", c.black, c.silver, s.bold) -- Active status line: black text, silver-white background, bold
+Group.new("StatusLineNC", c.silver, c.darkgray, s.bold) -- Inactive status line: silver text, dark gray background, bold
 
 Group.new("@constant", c.orange, nil, s.none)
 Group.new("@function", c.yellow, nil, s.none)
