@@ -50,7 +50,7 @@ Color.new("gray0", background_string)
 Group.new("Normal", c.superwhite, c.gray0) -- Default text with dark background
 
 -- Status Line
-Group.new("StatusLine", c.black, c.silver) -- Active status line: black text on less bright silver background
+Group.new("StatusLine", c.black, c.blue) -- Active status line: black text on less bright silver background
 Group.new("StatusLineNC", c.silver_text, c.darkgray, s.bold) -- Inactive status line: silver text on dark gray background, bold style
 
 -- Syntax Highlighting
