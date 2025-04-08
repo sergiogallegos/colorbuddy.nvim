@@ -53,6 +53,11 @@ Group.new("Normal", c.superwhite, c.gray0) -- Default text with dark background
 Group.new("StatusLine", c.black, c.silver) -- Active status line: black text on less bright silver background
 Group.new("StatusLineNC", c.silver_text, c.darkgray, s.bold) -- Inactive status line: silver text on dark gray background, bold style
 
+-- Mode highlights
+Group.new("StatusNormal", c.green, c.gray0, s.bold)  -- Normal mode: green text
+Group.new("StatusInsert", c.blue, c.gray0, s.bold)   -- Insert mode: blue text
+Group.new("StatusVisual", c.pink, c.gray0, s.bold)   -- Visual mode: pink text
+
 -- Syntax Highlighting
 Group.new("@constant", c.orange, nil, s.none)          -- Constants in orange
 Group.new("@function", c.yellow, nil, s.none)          -- Functions in yellow
