@@ -19,6 +19,7 @@ Color.new("black", "#000000")        -- Black for active status line text
 Color.new("darkgray", "#333333")     -- Dark gray for inactive status line background
 Color.new("silver", "#bbbbbb")       -- Less bright silver for active status line background
 Color.new("silver_text", "#d3d3d3")  -- Silver for inactive status line text
+Color.new("dark_blue_gray", "#282c34")
 
 -- Accent colors for syntax highlighting
 Color.new("red", "#cc6666")          -- Red for warnings or errors
@@ -50,7 +51,7 @@ Color.new("gray0", background_string)
 Group.new("Normal", c.superwhite, c.gray0) -- Default text with dark background
 
 -- Status Line
-Group.new("StatusLine", c.black, c.blue) -- Active status line: black text on less bright silver background
+Group.new("StatusLine", c.black, c.dark_blue_gray) -- Active status line: black text on less bright silver background
 Group.new("StatusLineNC", c.silver_text, c.darkgray, s.bold) -- Inactive status line: silver text on dark gray background, bold style
 
 -- Syntax Highlighting
