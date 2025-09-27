@@ -1,0 +1,35 @@
+name: Test CustomBuddy Colorscheme
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Neovim
+      uses: nvim-lua/setup-neovim@v1
+      with:
+        neovim-version: '0.9'
+    
+    - name: Test colorscheme loading
+      run: |
+        nvim --headless -c "lua require('colorbuddy').colorscheme('custombuddy')" -c "lua print('✅ CustomBuddy colorscheme loaded successfully')" -c "qa"
+    
+    - name: Test color definitions
+      run: |
+        nvim --headless -c "lua require('colorbuddy').colorscheme('custombuddy')" -c "lua local c = require('colorbuddy').colors; print('✅ Colors loaded:', c.superwhite.name, c.background.name, c.transparent.name)" -c "qa"
+    
+    - name: Test group definitions
+      run: |
+        nvim --headless -c "lua require('colorbuddy').colorscheme('custombuddy')" -c "lua local g = require('colorbuddy').groups; print('✅ Groups loaded:', g.Normal.name, g.StatusLine.name)" -c "qa"
+    
+    - name: Test transparency support
+      run: |
+        nvim --headless -c "lua require('colorbuddy').colorscheme('custombuddy')" -c "lua local c = require('colorbuddy').colors; print('✅ Transparency support:', c.transparent:to_vim())" -c "qa"
