@@ -21,7 +21,7 @@ Color.new("darkgray", "#333333")      -- Dark gray for inactive status line back
 Color.new("silver", "#bbbbbb")        -- Less bright silver for active status line background
 Color.new("silver_text", "#d3d3d3")   -- Silver for inactive status line text
 Color.new("dark_blue_gray", "#282c34")
-Color.new("transparent", "NONE")      -- Transparent background support
+Color.new("transparent", "#000000")   -- Transparent background support (will be overridden)
 
 -- Accent colors for syntax highlighting
 Color.new("red", "#cc6666")          -- Red for warnings or errors
