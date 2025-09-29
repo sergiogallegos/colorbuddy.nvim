@@ -15,14 +15,14 @@ local s = colorbuddy.styles
 -- Prime-Inspired Color Palette
 -- =====================
 
--- Core colors - Authentic Gruvbox-inspired colors
+-- Core colors - Authentic Gruvbox colors
 Color.new("white", "#ebdbb2")         -- Gruvbox light text
 Color.new("superwhite", "#ffffff")     -- Pure white
 Color.new("black", "#000000")         -- Pure black
 Color.new("darkgray", "#3c3836")      -- Gruvbox dark gray
 Color.new("silver", "#a89984")        -- Gruvbox silver
 Color.new("silver_text", "#a89984")   -- Gruvbox silver text
-Color.new("dark_blue_gray", "#1d2021") -- Gruvbox dark background
+Color.new("dark_blue_gray", "#282828") -- Gruvbox dark background
 Color.new("transparent", "#000000")   -- Transparent background support
 
 -- Authentic Gruvbox accent colors
@@ -43,7 +43,7 @@ Color.new("seagreen", "#928374")     -- Gruvbox gray comments
 Color.new("turquoise", "#8ec07c")    -- Gruvbox turquoise
 
 -- Editor background - Authentic Gruvbox dark
-local background_string = "#1d2021"  -- Gruvbox dark background
+local background_string = "#282828"  -- Gruvbox dark background
 Color.new("background", background_string)
 Color.new("gray0", background_string)
 
@@ -56,7 +56,7 @@ Group.new("Normal", c.superwhite, c.transparent)
 
 -- High-contrast status line
 Group.new("StatusLine", c.black, c.green) -- Black text on green
-Group.new("StatusLineNC", c.silver_text, c.darkgray, s.bold)
+Group.new("StatusLineNC", c.silver_text, c.transparent, s.bold)
 
 -- High-contrast line numbers
 Group.new("LineNr", c.darkgray, c.transparent)
@@ -75,14 +75,14 @@ Group.new("CurSearch", c.black, c.green) -- Black text on green
 Group.new("MatchParen", c.black, c.cyan, s.bold) -- Black text on cyan
 
 -- High-contrast popup menus
-Group.new("Pmenu", c.superwhite, c.dark_blue_gray)
+Group.new("Pmenu", c.superwhite, c.transparent)
 Group.new("PmenuSel", c.black, c.green) -- Black text on green
-Group.new("PmenuSbar", nil, c.darkgray)
+Group.new("PmenuSbar", nil, c.transparent)
 Group.new("PmenuThumb", nil, c.silver)
 
 -- High-contrast tabs
-Group.new("TabLine", c.silver_text, c.darkgray)
-Group.new("TabLineFill", c.silver, c.darkgray)
+Group.new("TabLine", c.silver_text, c.transparent)
+Group.new("TabLineFill", c.silver, c.transparent)
 Group.new("TabLineSel", c.black, c.green, s.bold) -- Black text on green
 
 -- Windows and splits
@@ -138,16 +138,16 @@ Group.new("@function.builtin.lua", c.green, nil, s.bold)
 -- =====================
 
 -- Telescope with high contrast
-Group.new("TelescopePrompt", c.superwhite, c.dark_blue_gray)
-Group.new("TelescopeResults", c.superwhite, c.background)
-Group.new("TelescopePreview", c.superwhite, c.background)
+Group.new("TelescopePrompt", c.superwhite, c.transparent)
+Group.new("TelescopeResults", c.superwhite, c.transparent)
+Group.new("TelescopePreview", c.superwhite, c.transparent)
 Group.new("TelescopeSelection", c.black, c.green) -- Black text on green
 Group.new("TelescopeSelectionCaret", c.green, c.green)
 Group.new("TelescopeMatching", c.yellow, nil, s.bold)
-Group.new("TelescopeBorder", c.green, c.background)
-Group.new("TelescopePromptBorder", c.green, c.dark_blue_gray)
-Group.new("TelescopeResultsBorder", c.green, c.background)
-Group.new("TelescopePreviewBorder", c.green, c.background)
+Group.new("TelescopeBorder", c.green, c.transparent)
+Group.new("TelescopePromptBorder", c.green, c.transparent)
+Group.new("TelescopeResultsBorder", c.green, c.transparent)
+Group.new("TelescopePreviewBorder", c.green, c.transparent)
 
 -- LSP Diagnostics with bold styling
 Group.new("LspDiagnosticsError", c.red, nil, s.bold)
@@ -165,7 +165,7 @@ Group.new("LspReferenceWrite", nil, c.green:dark(0.4), s.bold)
 Group.new("LspReferenceText", nil, c.green:dark(0.4), s.none)
 
 -- NvimTree with high contrast
-Group.new("NvimTreeNormal", c.superwhite, c.background)
+Group.new("NvimTreeNormal", c.superwhite, c.transparent)
 Group.new("NvimTreeFolderName", c.green, nil, s.bold) -- Green folders
 Group.new("NvimTreeOpenedFolderName", c.green, nil, s.bold)
 Group.new("NvimTreeEmptyFolderName", c.silver, nil, s.none)
@@ -179,10 +179,10 @@ Group.new("NvimTreeGitStaged", c.green, nil, s.bold)
 Group.new("NvimTreeGitNew", c.orange, nil, s.bold)
 
 -- BufferLine with high contrast
-Group.new("BufferLineFill", c.silver, c.darkgray)
-Group.new("BufferLineBackground", c.silver_text, c.darkgray)
+Group.new("BufferLineFill", c.silver, c.transparent)
+Group.new("BufferLineBackground", c.silver_text, c.transparent)
 Group.new("BufferLineBufferSelected", c.black, c.green) -- Black text on green
-Group.new("BufferLineBufferVisible", c.superwhite, c.dark_blue_gray)
+Group.new("BufferLineBufferVisible", c.superwhite, c.transparent)
 Group.new("BufferLineIndicatorSelected", c.green, c.green)
 Group.new("BufferLineIndicatorVisible", c.green, c.green)
 

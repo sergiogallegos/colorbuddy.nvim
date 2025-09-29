@@ -15,7 +15,7 @@ local s = colorbuddy.styles
 -- TJ-Inspired Color Palette
 -- =====================
 
--- Core colors - Authentic Catppuccin-inspired colors
+-- Core colors - Authentic Catppuccin Mocha colors
 Color.new("white", "#cdd6f4")         -- Catppuccin light text
 Color.new("superwhite", "#ffffff")     -- Pure white
 Color.new("black", "#000000")         -- Pure black
@@ -25,7 +25,7 @@ Color.new("silver_text", "#a6adc8")   -- Catppuccin silver text
 Color.new("dark_blue_gray", "#1e1e2e") -- Catppuccin dark background
 Color.new("transparent", "#000000")   -- Transparent background support
 
--- Authentic Catppuccin accent colors
+-- Authentic Catppuccin Mocha accent colors
 Color.new("red", "#f38ba8")          -- Catppuccin red
 Color.new("pink", "#f5c2e7")         -- Catppuccin pink
 Color.new("green", "#a6e3a1")        -- Catppuccin green
@@ -42,8 +42,8 @@ Color.new("brown", "#f5c2e7")        -- Catppuccin brown
 Color.new("seagreen", "#6c7086")     -- Catppuccin gray comments
 Color.new("turquoise", "#89dceb")    -- Catppuccin turquoise
 
--- Editor background - Authentic Catppuccin dark
-local background_string = "#1e1e2e"  -- Catppuccin dark background
+-- Editor background - Authentic Catppuccin Mocha dark
+local background_string = "#1e1e2e"  -- Catppuccin Mocha dark background
 Color.new("background", background_string)
 Color.new("gray0", background_string)
 
@@ -55,7 +55,7 @@ Color.new("gray0", background_string)
 Group.new("Normal", c.superwhite, c.transparent)
 
 -- Professional status line
-Group.new("StatusLine", c.superwhite, c.dark_blue_gray) -- Clean status line
+Group.new("StatusLine", c.superwhite, c.transparent) -- Clean status line
 Group.new("StatusLineNC", c.silver_text, c.darkgray, s.none) -- Subtle inactive
 
 -- Professional line numbers
@@ -75,14 +75,14 @@ Group.new("CurSearch", c.black, c.green) -- Black text on green
 Group.new("MatchParen", c.black, c.cyan, s.none) -- Subtle matching
 
 -- Professional popup menus
-Group.new("Pmenu", c.superwhite, c.dark_blue_gray)
+Group.new("Pmenu", c.superwhite, c.transparent)
 Group.new("PmenuSel", c.black, c.blue) -- Black text on blue
-Group.new("PmenuSbar", nil, c.darkgray)
+Group.new("PmenuSbar", nil, c.transparent)
 Group.new("PmenuThumb", nil, c.silver)
 
 -- Professional tabs
-Group.new("TabLine", c.silver_text, c.darkgray)
-Group.new("TabLineFill", c.silver, c.darkgray)
+Group.new("TabLine", c.silver_text, c.transparent)
+Group.new("TabLineFill", c.silver, c.transparent)
 Group.new("TabLineSel", c.black, c.blue, s.none) -- Subtle selected tab
 
 -- Windows and splits
@@ -138,16 +138,16 @@ Group.new("@function.builtin.lua", c.yellow, nil, s.none)
 -- =====================
 
 -- Telescope with professional styling
-Group.new("TelescopePrompt", c.superwhite, c.dark_blue_gray)
-Group.new("TelescopeResults", c.superwhite, c.background)
-Group.new("TelescopePreview", c.superwhite, c.background)
+Group.new("TelescopePrompt", c.superwhite, c.transparent)
+Group.new("TelescopeResults", c.superwhite, c.transparent)
+Group.new("TelescopePreview", c.superwhite, c.transparent)
 Group.new("TelescopeSelection", c.black, c.blue) -- Black text on blue
 Group.new("TelescopeSelectionCaret", c.blue, c.blue)
 Group.new("TelescopeMatching", c.yellow, nil, s.none) -- Subtle matching
-Group.new("TelescopeBorder", c.darkgray, c.background)
-Group.new("TelescopePromptBorder", c.darkgray, c.dark_blue_gray)
-Group.new("TelescopeResultsBorder", c.darkgray, c.background)
-Group.new("TelescopePreviewBorder", c.darkgray, c.background)
+Group.new("TelescopeBorder", c.darkgray, c.transparent)
+Group.new("TelescopePromptBorder", c.darkgray, c.transparent)
+Group.new("TelescopeResultsBorder", c.darkgray, c.transparent)
+Group.new("TelescopePreviewBorder", c.darkgray, c.transparent)
 
 -- LSP Diagnostics with subtle styling
 Group.new("LspDiagnosticsError", c.red, nil, s.none)
@@ -165,7 +165,7 @@ Group.new("LspReferenceWrite", nil, c.blue:dark(0.2), s.none)
 Group.new("LspReferenceText", nil, c.blue:dark(0.2), s.none)
 
 -- NvimTree with professional styling
-Group.new("NvimTreeNormal", c.superwhite, c.background)
+Group.new("NvimTreeNormal", c.superwhite, c.transparent)
 Group.new("NvimTreeFolderName", c.blue, nil, s.none) -- Subtle folders
 Group.new("NvimTreeOpenedFolderName", c.blue, nil, s.none)
 Group.new("NvimTreeEmptyFolderName", c.silver, nil, s.none)
@@ -179,10 +179,10 @@ Group.new("NvimTreeGitStaged", c.green, nil, s.none)
 Group.new("NvimTreeGitNew", c.orange, nil, s.none)
 
 -- BufferLine with professional styling
-Group.new("BufferLineFill", c.silver, c.darkgray)
-Group.new("BufferLineBackground", c.silver_text, c.darkgray)
+Group.new("BufferLineFill", c.silver, c.transparent)
+Group.new("BufferLineBackground", c.silver_text, c.transparent)
 Group.new("BufferLineBufferSelected", c.black, c.blue) -- Black text on blue
-Group.new("BufferLineBufferVisible", c.superwhite, c.dark_blue_gray)
+Group.new("BufferLineBufferVisible", c.superwhite, c.transparent)
 Group.new("BufferLineIndicatorSelected", c.blue, c.blue)
 Group.new("BufferLineIndicatorVisible", c.blue, c.blue)
 

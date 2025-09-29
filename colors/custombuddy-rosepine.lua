@@ -55,9 +55,9 @@ Color.new("gray0", background_string)
 Group.new("Normal", c.superwhite, c.transparent)
 
 -- Rose Pine status line
-Group.new("StatusLine", c.superwhite, c.dark_blue_gray) -- Clean status line
+Group.new("StatusLine", c.superwhite, c.transparent) -- Clean status line
 Group.new("StatusLineNC", c.silver_text, c.darkgray, s.none) -- Subtle inactive
-Group.new("StatusLineTerm", c.superwhite, c.dark_blue_gray) -- Terminal status line
+Group.new("StatusLineTerm", c.superwhite, c.transparent) -- Terminal status line
 Group.new("StatusLineTermNC", c.silver_text, c.darkgray, s.none) -- Inactive terminal
 
 -- Rose Pine line numbers and cursor
@@ -78,14 +78,14 @@ Group.new("CurSearch", c.black, c.green) -- Black text on green
 Group.new("MatchParen", c.black, c.cyan, s.bold) -- Bold matching parentheses
 
 -- Rose Pine popup menus
-Group.new("Pmenu", c.superwhite, c.dark_blue_gray) -- Popup menu
+Group.new("Pmenu", c.superwhite, c.transparent) -- Popup menu
 Group.new("PmenuSel", c.black, c.blue) -- Black text on blue
-Group.new("PmenuSbar", nil, c.darkgray) -- Popup menu scrollbar
+Group.new("PmenuSbar", nil, c.transparent) -- Popup menu scrollbar
 Group.new("PmenuThumb", nil, c.silver) -- Popup menu thumb
 
 -- Rose Pine tabs
-Group.new("TabLine", c.silver_text, c.darkgray) -- Tab line
-Group.new("TabLineFill", c.silver, c.darkgray) -- Tab line fill
+Group.new("TabLine", c.silver_text, c.transparent) -- Tab line
+Group.new("TabLineFill", c.silver, c.transparent) -- Tab line fill
 Group.new("TabLineSel", c.black, c.blue, s.bold) -- Black text on blue for selected tab
 
 -- Rose Pine windows and splits
@@ -141,16 +141,16 @@ Group.new("@function.builtin.lua", c.yellow, nil, s.bold) -- Bold Lua built-in f
 -- =====================
 
 -- Rose Pine Telescope styling
-Group.new("TelescopePrompt", c.superwhite, c.dark_blue_gray) -- Telescope prompt
-Group.new("TelescopeResults", c.superwhite, c.background) -- Telescope results
-Group.new("TelescopePreview", c.superwhite, c.background) -- Telescope preview
+Group.new("TelescopePrompt", c.superwhite, c.transparent) -- Telescope prompt
+Group.new("TelescopeResults", c.superwhite, c.transparent) -- Telescope results
+Group.new("TelescopePreview", c.superwhite, c.transparent) -- Telescope preview
 Group.new("TelescopeSelection", c.black, c.blue) -- Black text on blue
 Group.new("TelescopeSelectionCaret", c.blue, c.blue) -- Blue selection caret
 Group.new("TelescopeMatching", c.yellow, nil, s.bold) -- Bold matching text
-Group.new("TelescopeBorder", c.blue, c.background) -- Blue borders
-Group.new("TelescopePromptBorder", c.blue, c.dark_blue_gray) -- Blue prompt border
-Group.new("TelescopeResultsBorder", c.blue, c.background) -- Blue results border
-Group.new("TelescopePreviewBorder", c.blue, c.background) -- Blue preview border
+Group.new("TelescopeBorder", c.blue, c.transparent) -- Blue borders
+Group.new("TelescopePromptBorder", c.blue, c.transparent) -- Blue prompt border
+Group.new("TelescopeResultsBorder", c.blue, c.transparent) -- Blue results border
+Group.new("TelescopePreviewBorder", c.blue, c.transparent) -- Blue preview border
 
 -- Rose Pine LSP Diagnostics
 Group.new("LspDiagnosticsError", c.red, nil, s.bold) -- Bold LSP errors
@@ -168,7 +168,7 @@ Group.new("LspReferenceWrite", nil, c.blue:dark(0.3), s.bold) -- Bold blue write
 Group.new("LspReferenceText", nil, c.blue:dark(0.3), s.none) -- Blue text references
 
 -- Rose Pine NvimTree styling
-Group.new("NvimTreeNormal", c.superwhite, c.background) -- NvimTree normal
+Group.new("NvimTreeNormal", c.superwhite, c.transparent) -- NvimTree normal
 Group.new("NvimTreeFolderName", c.blue, nil, s.bold) -- Bold folder names
 Group.new("NvimTreeOpenedFolderName", c.blue, nil, s.bold) -- Bold opened folders
 Group.new("NvimTreeEmptyFolderName", c.silver, nil, s.none) -- Empty folders
@@ -182,10 +182,10 @@ Group.new("NvimTreeGitStaged", c.green, nil, s.bold) -- Bold git staged files
 Group.new("NvimTreeGitNew", c.orange, nil, s.bold) -- Bold git new files
 
 -- Rose Pine BufferLine styling
-Group.new("BufferLineFill", c.silver, c.darkgray) -- Buffer line fill
-Group.new("BufferLineBackground", c.silver_text, c.darkgray) -- Inactive buffers
+Group.new("BufferLineFill", c.silver, c.transparent) -- Buffer line fill
+Group.new("BufferLineBackground", c.silver_text, c.transparent) -- Inactive buffers
 Group.new("BufferLineBufferSelected", c.black, c.blue) -- Black text on blue
-Group.new("BufferLineBufferVisible", c.superwhite, c.dark_blue_gray) -- Visible buffers
+Group.new("BufferLineBufferVisible", c.superwhite, c.transparent) -- Visible buffers
 Group.new("BufferLineIndicatorSelected", c.blue, c.blue) -- Blue selected indicator
 Group.new("BufferLineIndicatorVisible", c.blue, c.blue) -- Blue visible indicator
 

@@ -75,14 +75,14 @@ Group.new("CurSearch", c.black, c.green) -- Black text on green
 Group.new("MatchParen", c.black, c.cyan, s.bold) -- Black text on cyan
 
 -- Modern popup menus
-Group.new("Pmenu", c.superwhite, c.dark_blue_gray)
+Group.new("Pmenu", c.superwhite, c.transparent)
 Group.new("PmenuSel", c.black, c.blue) -- Black text on blue
-Group.new("PmenuSbar", nil, c.darkgray)
+Group.new("PmenuSbar", nil, c.transparent)
 Group.new("PmenuThumb", nil, c.silver)
 
 -- Modern tabs
-Group.new("TabLine", c.silver_text, c.darkgray)
-Group.new("TabLineFill", c.silver, c.darkgray)
+Group.new("TabLine", c.silver_text, c.transparent)
+Group.new("TabLineFill", c.silver, c.transparent)
 Group.new("TabLineSel", c.black, c.blue, s.bold) -- Black text on blue
 
 -- Windows and splits
@@ -138,16 +138,16 @@ Group.new("@function.builtin.lua", c.yellow, nil, s.bold)
 -- =====================
 
 -- Telescope with modern styling
-Group.new("TelescopePrompt", c.superwhite, c.dark_blue_gray)
-Group.new("TelescopeResults", c.superwhite, c.background)
-Group.new("TelescopePreview", c.superwhite, c.background)
+Group.new("TelescopePrompt", c.superwhite, c.transparent)
+Group.new("TelescopeResults", c.superwhite, c.transparent)
+Group.new("TelescopePreview", c.superwhite, c.transparent)
 Group.new("TelescopeSelection", c.black, c.blue) -- Black text on blue
 Group.new("TelescopeSelectionCaret", c.blue, c.blue)
 Group.new("TelescopeMatching", c.yellow, nil, s.bold)
-Group.new("TelescopeBorder", c.blue, c.background)
-Group.new("TelescopePromptBorder", c.blue, c.dark_blue_gray)
-Group.new("TelescopeResultsBorder", c.blue, c.background)
-Group.new("TelescopePreviewBorder", c.blue, c.background)
+Group.new("TelescopeBorder", c.blue, c.transparent)
+Group.new("TelescopePromptBorder", c.blue, c.transparent)
+Group.new("TelescopeResultsBorder", c.blue, c.transparent)
+Group.new("TelescopePreviewBorder", c.blue, c.transparent)
 
 -- LSP Diagnostics
 Group.new("LspDiagnosticsError", c.red, nil, s.bold)
@@ -165,7 +165,7 @@ Group.new("LspReferenceWrite", nil, c.blue:dark(0.3), s.bold)
 Group.new("LspReferenceText", nil, c.blue:dark(0.3), s.none)
 
 -- NvimTree with modern colors
-Group.new("NvimTreeNormal", c.superwhite, c.background)
+Group.new("NvimTreeNormal", c.superwhite, c.transparent)
 Group.new("NvimTreeFolderName", c.blue, nil, s.bold)
 Group.new("NvimTreeOpenedFolderName", c.blue, nil, s.bold)
 Group.new("NvimTreeEmptyFolderName", c.silver, nil, s.none)
@@ -179,10 +179,10 @@ Group.new("NvimTreeGitStaged", c.green, nil, s.none)
 Group.new("NvimTreeGitNew", c.orange, nil, s.none)
 
 -- BufferLine with modern styling
-Group.new("BufferLineFill", c.silver, c.darkgray)
-Group.new("BufferLineBackground", c.silver_text, c.darkgray)
+Group.new("BufferLineFill", c.silver, c.transparent)
+Group.new("BufferLineBackground", c.silver_text, c.transparent)
 Group.new("BufferLineBufferSelected", c.black, c.blue) -- Black text on blue
-Group.new("BufferLineBufferVisible", c.superwhite, c.dark_blue_gray)
+Group.new("BufferLineBufferVisible", c.superwhite, c.transparent)
 Group.new("BufferLineIndicatorSelected", c.blue, c.blue)
 Group.new("BufferLineIndicatorVisible", c.blue, c.blue)
 
