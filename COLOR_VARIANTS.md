@@ -137,16 +137,36 @@ Accents: #74c0fc (blue), #a8e6cf (green), #ff9ac1 (pink)
 Comments: #6c757d (gray)
 ```
 
+### 7. **CustomBuddy Rose Pine** (`custombuddy-rosepine`)
+*Inspired by Rose Pine color palette*
+
+**Theme**: Beautiful, modern colors with excellent contrast and warmth
+
+**Key Features:**
+- **Background**: `#191724` (Rose Pine dark)
+- **Accent Color**: Blue (`#31748f`) throughout for consistency
+- **Style**: Beautiful, warm styling with modern aesthetics
+- **Colors**: Rose Pine inspired palette
+- **Best For**: Developers who love beautiful colors, modern aesthetics, warm tones
+
+**Color Palette:**
+```lua
+Background: #191724
+Primary Text: #ffffff
+Accents: #31748f (blue), #9ccfd8 (green), #f6c177 (yellow)
+Comments: #6e6a86 (gray)
+```
+
 ## 📊 **Comparison Table**
 
-| Feature | Original | Craftz | Prime | TJ | Cursor | VS Code | Xcode |
-|---------|----------|--------|-------|-----|--------|---------|-------|
-| **Background** | `#1a1a1a` | `#1e1e1e` | `#0d1117` | `#1e1e1e` | `#1a1b26` | `#1e1e1e` | `#1e1e1e` |
-| **Contrast** | High | Medium-High | Very High | Medium | High | High | High |
-| **Accent Color** | Blue | Blue | Green | Blue | Blue | Blue | Blue |
-| **Styling** | Bold | Bold | Bold | Subtle | Clean | Professional | Apple |
-| **Best For** | General | Modern | Terminal | Professional | Cursor IDE | VS Code | macOS |
-| **Eye Strain** | Low | Low | Very Low | Very Low | Low | Low | Low |
+| Feature | Original | Craftz | Prime | TJ | Cursor | VS Code | Xcode | Rose Pine |
+|---------|----------|--------|-------|-----|--------|---------|-------|-----------|
+| **Background** | `#1a1a1a` | `#1e1e1e` | `#0d1117` | `#1e1e1e` | `#1a1b26` | `#1e1e1e` | `#1e1e1e` | `#191724` |
+| **Contrast** | High | Medium-High | Very High | Medium | High | High | High | High |
+| **Accent Color** | Blue | Blue | Green | Blue | Blue | Blue | Blue | Blue |
+| **Styling** | Bold | Bold | Bold | Subtle | Clean | Professional | Apple | Beautiful |
+| **Best For** | General | Modern | Terminal | Professional | Cursor IDE | VS Code | macOS | Beautiful |
+| **Eye Strain** | Low | Low | Very Low | Very Low | Low | Low | Low | Very Low |
 
 ## 🎯 **Usage Recommendations**
 
@@ -186,6 +206,12 @@ Comments: #6c757d (gray)
 - You prefer Apple-inspired aesthetics
 - You want macOS integration
 
+### **Choose CustomBuddy Rose Pine if:**
+- You love beautiful, warm color palettes
+- You prefer modern, aesthetic colors
+- You want excellent contrast with warmth
+- You appreciate the Rose Pine aesthetic
+
 ### **Keep Original CustomBuddy if:**
 - You're happy with the current styling
 - You prefer the warm color temperature
@@ -203,6 +229,7 @@ vim.cmd.colorscheme("custombuddy-tj")     -- TJ variant
 vim.cmd.colorscheme("custombuddy-cursor") -- Cursor IDE variant
 vim.cmd.colorscheme("custombuddy-vscode") -- VS Code variant
 vim.cmd.colorscheme("custombuddy-xcode")  -- Xcode variant
+vim.cmd.colorscheme("custombuddy-rosepine") -- Rose Pine variant
 ```
 
 ### **Quick Switch Between Variants:**
@@ -235,6 +262,10 @@ end, { desc = "CustomBuddy VS Code" })
 vim.keymap.set("n", "<leader>cx", function()
   vim.cmd.colorscheme("custombuddy-xcode")
 end, { desc = "CustomBuddy Xcode" })
+
+vim.keymap.set("n", "<leader>cr", function()
+  vim.cmd.colorscheme("custombuddy-rosepine")
+end, { desc = "CustomBuddy Rose Pine" })
 ```
 
 ## 🔧 **Customization**
