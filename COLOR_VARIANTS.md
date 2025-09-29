@@ -77,16 +77,76 @@ Accents: #7daea3 (blue), #a9b665 (green), #d8a657 (yellow)
 Comments: #6a6a6a (muted gray)
 ```
 
+### 4. **CustomBuddy Cursor** (`custombuddy-cursor`)
+*Inspired by Cursor IDE's modern color scheme*
+
+**Theme**: Clean, modern, with Cursor IDE aesthetics
+
+**Key Features:**
+- **Background**: `#1a1b26` (Cursor IDE dark)
+- **Accent Color**: Blue (`#7aa2f7`) throughout for consistency
+- **Style**: Clean, minimal styling with professional appearance
+- **Colors**: Cursor IDE inspired palette
+- **Best For**: Modern development, Cursor IDE users, clean aesthetics
+
+**Color Palette:**
+```lua
+Background: #1a1b26
+Primary Text: #ffffff
+Accents: #7aa2f7 (blue), #85b378 (green), #ff7ab2 (pink)
+Comments: #565f89 (blue-gray)
+```
+
+### 5. **CustomBuddy VS Code** (`custombuddy-vscode`)
+*Inspired by VS Code's modern dark theme*
+
+**Theme**: Professional, familiar VS Code colors
+
+**Key Features:**
+- **Background**: `#1e1e1e` (VS Code dark)
+- **Accent Color**: Blue (`#569cd6`) throughout for consistency
+- **Style**: Professional styling with familiar VS Code colors
+- **Colors**: VS Code inspired palette
+- **Best For**: VS Code users, professional development, familiar interface
+
+**Color Palette:**
+```lua
+Background: #1e1e1e
+Primary Text: #ffffff
+Accents: #569cd6 (blue), #b5cea8 (green), #ce9178 (pink)
+Comments: #6a9955 (green)
+```
+
+### 6. **CustomBuddy Xcode** (`custombuddy-xcode`)
+*Inspired by Xcode's macOS native color scheme*
+
+**Theme**: Clean, Apple-inspired colors with macOS integration
+
+**Key Features:**
+- **Background**: `#1e1e1e` (Xcode dark)
+- **Accent Color**: Blue (`#74c0fc`) throughout for consistency
+- **Style**: Apple-inspired styling with macOS aesthetics
+- **Colors**: Xcode inspired palette
+- **Best For**: macOS developers, Xcode users, Apple ecosystem
+
+**Color Palette:**
+```lua
+Background: #1e1e1e
+Primary Text: #ffffff
+Accents: #74c0fc (blue), #a8e6cf (green), #ff9ac1 (pink)
+Comments: #6c757d (gray)
+```
+
 ## 📊 **Comparison Table**
 
-| Feature | Original | Craftz | Prime | TJ |
-|---------|----------|--------|-------|-----|
-| **Background** | `#111111` | `#1e1e1e` | `#0d1117` | `#1e1e1e` |
-| **Contrast** | High | Medium-High | Very High | Medium |
-| **Accent Color** | Mixed | Blue | Green | Blue |
-| **Styling** | Normal | Bold | Bold | Subtle |
-| **Best For** | General | Modern | Terminal | Professional |
-| **Eye Strain** | Low | Low | Very Low | Very Low |
+| Feature | Original | Craftz | Prime | TJ | Cursor | VS Code | Xcode |
+|---------|----------|--------|-------|-----|--------|---------|-------|
+| **Background** | `#1a1a1a` | `#1e1e1e` | `#0d1117` | `#1e1e1e` | `#1a1b26` | `#1e1e1e` | `#1e1e1e` |
+| **Contrast** | High | Medium-High | Very High | Medium | High | High | High |
+| **Accent Color** | Blue | Blue | Green | Blue | Blue | Blue | Blue |
+| **Styling** | Bold | Bold | Bold | Subtle | Clean | Professional | Apple |
+| **Best For** | General | Modern | Terminal | Professional | Cursor IDE | VS Code | macOS |
+| **Eye Strain** | Low | Low | Very Low | Very Low | Low | Low | Low |
 
 ## 🎯 **Usage Recommendations**
 
@@ -108,6 +168,24 @@ Comments: #6a6a6a (muted gray)
 - You want reduced eye strain
 - You prefer muted, professional colors
 
+### **Choose CustomBuddy Cursor if:**
+- You use Cursor IDE and want familiar colors
+- You prefer clean, modern aesthetics
+- You want professional appearance
+- You like minimal, clean styling
+
+### **Choose CustomBuddy VS Code if:**
+- You're familiar with VS Code
+- You want professional development colors
+- You prefer familiar interface colors
+- You work in professional environments
+
+### **Choose CustomBuddy Xcode if:**
+- You develop on macOS
+- You use Xcode and want familiar colors
+- You prefer Apple-inspired aesthetics
+- You want macOS integration
+
 ### **Keep Original CustomBuddy if:**
 - You're happy with the current styling
 - You prefer the warm color temperature
@@ -118,10 +196,13 @@ Comments: #6a6a6a (muted gray)
 ### **Install All Variants:**
 ```lua
 -- In your Neovim config
-vim.cmd.colorscheme("custombuddy")        -- Original
+vim.cmd.colorscheme("custombuddy")        -- Original (enhanced)
 vim.cmd.colorscheme("custombuddy-craftz") -- Craftz variant
 vim.cmd.colorscheme("custombuddy-prime")  -- Prime variant
 vim.cmd.colorscheme("custombuddy-tj")     -- TJ variant
+vim.cmd.colorscheme("custombuddy-cursor") -- Cursor IDE variant
+vim.cmd.colorscheme("custombuddy-vscode") -- VS Code variant
+vim.cmd.colorscheme("custombuddy-xcode")  -- Xcode variant
 ```
 
 ### **Quick Switch Between Variants:**
@@ -142,6 +223,18 @@ end, { desc = "CustomBuddy Prime" })
 vim.keymap.set("n", "<leader>ct", function()
   vim.cmd.colorscheme("custombuddy-tj")
 end, { desc = "CustomBuddy TJ" })
+
+vim.keymap.set("n", "<leader>cu", function()
+  vim.cmd.colorscheme("custombuddy-cursor")
+end, { desc = "CustomBuddy Cursor" })
+
+vim.keymap.set("n", "<leader>cv", function()
+  vim.cmd.colorscheme("custombuddy-vscode")
+end, { desc = "CustomBuddy VS Code" })
+
+vim.keymap.set("n", "<leader>cx", function()
+  vim.cmd.colorscheme("custombuddy-xcode")
+end, { desc = "CustomBuddy Xcode" })
 ```
 
 ## 🔧 **Customization**

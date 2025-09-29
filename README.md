@@ -20,7 +20,7 @@ This personal fork includes:
 
 ## 🚀 Custom Colorschemes
 
-This fork includes **4 CustomBuddy variants** inspired by popular Neovim configurations:
+This fork includes **7 CustomBuddy variants** inspired by popular Neovim configurations and modern IDEs:
 
 ### **CustomBuddy Original** (`custombuddy`)
 - Warm, readable color palette
@@ -46,6 +46,24 @@ This fork includes **4 CustomBuddy variants** inspired by popular Neovim configu
 - Blue accent theme
 - Subtle styling for reduced eye strain
 - Professional appearance
+
+### **CustomBuddy Cursor** (`custombuddy-cursor`)
+- Clean, modern colors inspired by Cursor IDE
+- Blue accent theme for consistency
+- Professional appearance with clean aesthetics
+- Perfect for Cursor IDE users
+
+### **CustomBuddy VS Code** (`custombuddy-vscode`)
+- Professional colors inspired by VS Code's modern dark theme
+- Blue accent theme throughout
+- Familiar interface for VS Code users
+- Professional development environment
+
+### **CustomBuddy Xcode** (`custombuddy-xcode`)
+- Apple-inspired colors from Xcode's macOS native scheme
+- Blue accent theme for consistency
+- Clean, macOS-integrated appearance
+- Perfect for macOS developers
 
 See `COLOR_VARIANTS.md` for detailed comparison and usage recommendations.
 
@@ -107,6 +125,9 @@ vim.cmd.colorscheme("custombuddy")        -- Original (warm, comfortable)
 vim.cmd.colorscheme("custombuddy-craftz") -- Modern, vibrant (blue accents)
 vim.cmd.colorscheme("custombuddy-prime")  -- High contrast (green accents)
 vim.cmd.colorscheme("custombuddy-tj")     -- Professional, subtle (blue accents)
+vim.cmd.colorscheme("custombuddy-cursor") -- Cursor IDE (clean, modern)
+vim.cmd.colorscheme("custombuddy-vscode") -- VS Code (professional, familiar)
+vim.cmd.colorscheme("custombuddy-xcode")  -- Xcode (Apple-inspired, macOS)
 ```
 
 ## CustomBuddy Features
