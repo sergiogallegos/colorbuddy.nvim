@@ -15,7 +15,7 @@ local s = colorbuddy.styles
 -- VS Code Modern Color Palette
 -- =====================
 
--- Core colors - VS Code modern dark theme
+-- Core colors - Authentic VS Code dark theme
 Color.new("white", "#d4d4d4")         -- VS Code light text
 Color.new("superwhite", "#ffffff")     -- Pure white for primary text
 Color.new("black", "#000000")         -- Pure black
@@ -25,7 +25,7 @@ Color.new("silver_text", "#cccccc")   -- VS Code silver text
 Color.new("dark_blue_gray", "#252526") -- VS Code dark background
 Color.new("transparent", "#000000")   -- Transparent background support
 
--- VS Code modern accent colors
+-- Authentic VS Code accent colors
 Color.new("red", "#f48771")          -- VS Code red for errors
 Color.new("pink", "#ce9178")         -- VS Code pink for strings
 Color.new("green", "#b5cea8")        -- VS Code green for success
@@ -42,7 +42,7 @@ Color.new("brown", "#d4d4d4")        -- VS Code brown for properties
 Color.new("seagreen", "#6a9955")     -- VS Code green for comments
 Color.new("turquoise", "#4ec9b0")    -- VS Code turquoise for unused text
 
--- Editor background - VS Code dark
+-- Editor background - Authentic VS Code dark
 local background_string = "#1e1e1e"  -- VS Code dark background
 Color.new("background", background_string)
 Color.new("gray0", background_string)

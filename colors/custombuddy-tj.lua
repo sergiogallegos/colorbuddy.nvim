@@ -15,35 +15,35 @@ local s = colorbuddy.styles
 -- TJ-Inspired Color Palette
 -- =====================
 
--- Core colors - Professional and subtle
-Color.new("white", "#e6e6e6")         -- Soft white
-Color.new("superwhite", "#f0f0f0")     -- Clean white
+-- Core colors - Authentic Catppuccin-inspired colors
+Color.new("white", "#cdd6f4")         -- Catppuccin light text
+Color.new("superwhite", "#ffffff")     -- Pure white
 Color.new("black", "#000000")         -- Pure black
-Color.new("darkgray", "#3c3c3c")      -- Professional gray
-Color.new("silver", "#a8a8a8")        -- Muted silver
-Color.new("silver_text", "#b8b8b8")   -- Soft silver text
-Color.new("dark_blue_gray", "#2a2a2a") -- Professional dark background
+Color.new("darkgray", "#45475a")      -- Catppuccin dark gray
+Color.new("silver", "#a6adc8")        -- Catppuccin silver
+Color.new("silver_text", "#a6adc8")   -- Catppuccin silver text
+Color.new("dark_blue_gray", "#1e1e2e") -- Catppuccin dark background
 Color.new("transparent", "#000000")   -- Transparent background support
 
--- Professional accent colors - Subtle but distinct
-Color.new("red", "#d75f5f")          -- Professional red
-Color.new("pink", "#d3869b")         -- Muted pink
-Color.new("green", "#a9b665")        -- Professional green
-Color.new("yellow", "#d8a657")       -- Professional yellow
-Color.new("blue", "#7daea3")         -- Professional blue
-Color.new("aqua", "#89b482")         -- Muted aqua
-Color.new("cyan", "#7daea3")         -- Professional cyan
-Color.new("purple", "#b16286")       -- Professional purple
-Color.new("violet", "#c678dd")       -- Muted violet
-Color.new("orange", "#d65d0e")       -- Professional orange
-Color.new("brown", "#a3685a")        -- Warm brown
+-- Authentic Catppuccin accent colors
+Color.new("red", "#f38ba8")          -- Catppuccin red
+Color.new("pink", "#f5c2e7")         -- Catppuccin pink
+Color.new("green", "#a6e3a1")        -- Catppuccin green
+Color.new("yellow", "#f9e2af")       -- Catppuccin yellow
+Color.new("blue", "#89b4fa")         -- Catppuccin blue
+Color.new("aqua", "#94e2d5")         -- Catppuccin aqua
+Color.new("cyan", "#89dceb")         -- Catppuccin cyan
+Color.new("purple", "#cba6f7")       -- Catppuccin purple
+Color.new("violet", "#cba6f7")       -- Catppuccin violet
+Color.new("orange", "#fab387")       -- Catppuccin orange
+Color.new("brown", "#f5c2e7")        -- Catppuccin brown
 
--- Professional comment colors
-Color.new("seagreen", "#6a6a6a")     -- Muted gray for comments
-Color.new("turquoise", "#5f8787")    -- Professional turquoise
+-- Catppuccin comment colors
+Color.new("seagreen", "#6c7086")     -- Catppuccin gray comments
+Color.new("turquoise", "#89dceb")    -- Catppuccin turquoise
 
--- Editor background - Professional dark
-local background_string = "#1e1e1e"  -- Professional dark background
+-- Editor background - Authentic Catppuccin dark
+local background_string = "#1e1e2e"  -- Catppuccin dark background
 Color.new("background", background_string)
 Color.new("gray0", background_string)
 

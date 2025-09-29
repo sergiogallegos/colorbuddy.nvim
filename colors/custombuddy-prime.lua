@@ -15,35 +15,35 @@ local s = colorbuddy.styles
 -- Prime-Inspired Color Palette
 -- =====================
 
--- Core colors - High contrast, terminal-friendly
-Color.new("white", "#f0f0f0")         -- Clean white
+-- Core colors - Authentic Gruvbox-inspired colors
+Color.new("white", "#ebdbb2")         -- Gruvbox light text
 Color.new("superwhite", "#ffffff")     -- Pure white
 Color.new("black", "#000000")         -- Pure black
-Color.new("darkgray", "#404040")      -- Medium gray
-Color.new("silver", "#a0a0a0")        -- Light gray
-Color.new("silver_text", "#c0c0c0")   -- Light silver
-Color.new("dark_blue_gray", "#1a1a1a") -- Very dark background
+Color.new("darkgray", "#3c3836")      -- Gruvbox dark gray
+Color.new("silver", "#a89984")        -- Gruvbox silver
+Color.new("silver_text", "#a89984")   -- Gruvbox silver text
+Color.new("dark_blue_gray", "#1d2021") -- Gruvbox dark background
 Color.new("transparent", "#000000")   -- Transparent background support
 
--- Bold, high-contrast accent colors
-Color.new("red", "#ff5555")          -- Bright red
-Color.new("pink", "#ff79c6")         -- Bright pink
-Color.new("green", "#50fa7b")        -- Bright green
-Color.new("yellow", "#f1fa8c")       -- Bright yellow
-Color.new("blue", "#8be9fd")         -- Bright blue
-Color.new("aqua", "#66d9ef")         -- Bright aqua
-Color.new("cyan", "#8be9fd")         -- Bright cyan
-Color.new("purple", "#bd93f9")       -- Bright purple
-Color.new("violet", "#c678dd")       -- Bright violet
-Color.new("orange", "#ffb86c")       -- Bright orange
-Color.new("brown", "#d4a574")        -- Warm brown
+-- Authentic Gruvbox accent colors
+Color.new("red", "#fb4934")          -- Gruvbox red
+Color.new("pink", "#d3869b")         -- Gruvbox pink
+Color.new("green", "#b8bb26")        -- Gruvbox green
+Color.new("yellow", "#fabd2f")       -- Gruvbox yellow
+Color.new("blue", "#83a598")         -- Gruvbox blue
+Color.new("aqua", "#8ec07c")         -- Gruvbox aqua
+Color.new("cyan", "#8ec07c")         -- Gruvbox cyan
+Color.new("purple", "#b16286")       -- Gruvbox purple
+Color.new("violet", "#b16286")       -- Gruvbox violet
+Color.new("orange", "#fe8019")       -- Gruvbox orange
+Color.new("brown", "#d65d0e")        -- Gruvbox brown
 
--- High-contrast comment colors
-Color.new("seagreen", "#6272a4")     -- Blue-gray comments
-Color.new("turquoise", "#44a6c6")    -- Bright turquoise
+-- Gruvbox comment colors
+Color.new("seagreen", "#928374")     -- Gruvbox gray comments
+Color.new("turquoise", "#8ec07c")    -- Gruvbox turquoise
 
--- Editor background - Very dark for high contrast
-local background_string = "#0d1117"  -- GitHub dark background
+-- Editor background - Authentic Gruvbox dark
+local background_string = "#1d2021"  -- Gruvbox dark background
 Color.new("background", background_string)
 Color.new("gray0", background_string)
 

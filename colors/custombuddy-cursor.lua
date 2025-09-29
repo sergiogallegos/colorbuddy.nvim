@@ -15,17 +15,17 @@ local s = colorbuddy.styles
 -- Cursor IDE Color Palette
 -- =====================
 
--- Core colors - Clean and modern like Cursor IDE
-Color.new("white", "#f8f8f2")         -- Clean white text
+-- Core colors - Authentic Cursor IDE colors
+Color.new("white", "#e6e6e6")         -- Cursor IDE text color
 Color.new("superwhite", "#ffffff")     -- Pure white for primary text
 Color.new("black", "#000000")         -- Pure black
-Color.new("darkgray", "#3c3c3c")      -- Modern dark gray
-Color.new("silver", "#c5c5c5")        -- Clean silver
-Color.new("silver_text", "#e0e0e0")   -- Light silver text
+Color.new("darkgray", "#404040")      -- Cursor IDE dark gray
+Color.new("silver", "#b3b3b3")        -- Cursor IDE silver
+Color.new("silver_text", "#cccccc")   -- Light silver text
 Color.new("dark_blue_gray", "#1e1e1e") -- Cursor IDE dark background
 Color.new("transparent", "#000000")   -- Transparent background support
 
--- Cursor IDE inspired accent colors - Clean and professional
+-- Authentic Cursor IDE accent colors
 Color.new("red", "#f97583")          -- Cursor IDE red for errors
 Color.new("pink", "#ff7ab2")         -- Cursor IDE pink for strings
 Color.new("green", "#85b378")        -- Cursor IDE green for success
@@ -42,8 +42,8 @@ Color.new("brown", "#a9b1d6")        -- Cursor IDE brown for properties
 Color.new("seagreen", "#565f89")     -- Cursor IDE blue-gray for comments
 Color.new("turquoise", "#2ac3de")    -- Cursor IDE turquoise for unused text
 
--- Editor background - Cursor IDE dark
-local background_string = "#1a1b26"  -- Cursor IDE dark background
+-- Editor background - Authentic Cursor IDE dark
+local background_string = "#1e1e1e"  -- Cursor IDE dark background
 Color.new("background", background_string)
 Color.new("gray0", background_string)
 
