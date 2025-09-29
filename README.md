@@ -20,14 +20,34 @@ This personal fork includes:
 
 ## 🚀 Custom Colorschemes
 
-This fork includes the **CustomBuddy** colorscheme with:
+This fork includes **4 CustomBuddy variants** inspired by popular Neovim configurations:
+
+### **CustomBuddy Original** (`custombuddy`)
 - Warm, readable color palette
 - Full transparency support
 - Comprehensive plugin integration
 - Enhanced syntax highlighting
 - Modern UI elements
 
-See `colors/custombuddy.lua` for the complete implementation.
+### **CustomBuddy Craftz** (`custombuddy-craftz`)
+- Modern, vibrant colors inspired by [craftzdog's config](https://github.com/craftzdog/dotfiles-public/tree/master/.config/nvim)
+- Blue accent theme for consistency
+- Bold keywords and functions
+- Better contrast than original
+
+### **CustomBuddy Prime** (`custombuddy-prime`)
+- High contrast styling inspired by [ThePrimeagen's config](https://github.com/ThePrimeagen/init.lua/tree/249f3b14cc517202c80c6babd0f9ec548351ec71)
+- Green accent theme
+- Bold styling throughout
+- Terminal-optimized colors
+
+### **CustomBuddy TJ** (`custombuddy-tj`)
+- Professional, subtle styling inspired by [tjdevries' config](https://github.com/tjdevries/config.nvim/tree/master)
+- Blue accent theme
+- Subtle styling for reduced eye strain
+- Professional appearance
+
+See `COLOR_VARIANTS.md` for detailed comparison and usage recommendations.
 
 ## 📸 Screenshots
 
@@ -40,6 +60,7 @@ New to CustomBuddy? Check out the [Quick Start Guide](QUICKSTART.md) to get up a
 ## 📚 Documentation
 
 - **[Quick Start Guide](QUICKSTART.md)** - Get up and running quickly
+- **[Color Variants](COLOR_VARIANTS.md)** - Complete comparison of all 4 variants
 - **[Color Palette](COLORS.md)** - Complete color reference and usage guidelines
 - **[Improvements](IMPROVEMENTS.md)** - Detailed enhancement documentation
 - **[Demo Configuration](demo/init.lua)** - Example setup with popular plugins
@@ -78,11 +99,14 @@ git clone https://github.com/sergiogallegos/colorbuddy.nvim.git ~/.local/share/n
 
 # Basic Usage
 
-## Using the CustomBuddy Colorscheme
+## Using the CustomBuddy Colorschemes
 
 ```lua
--- Use the enhanced CustomBuddy colorscheme
-vim.cmd.colorscheme("custombuddy")
+-- Choose your preferred variant
+vim.cmd.colorscheme("custombuddy")        -- Original (warm, comfortable)
+vim.cmd.colorscheme("custombuddy-craftz") -- Modern, vibrant (blue accents)
+vim.cmd.colorscheme("custombuddy-prime")  -- High contrast (green accents)
+vim.cmd.colorscheme("custombuddy-tj")     -- Professional, subtle (blue accents)
 ```
 
 ## CustomBuddy Features
