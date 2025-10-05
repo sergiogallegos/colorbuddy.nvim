@@ -13,32 +13,32 @@ local s = colorbuddy.styles
 -- Define Color Palette
 -- =====================
 
--- Core colors for text and backgrounds - Enhanced for better contrast
-Color.new("white", "#f8f8f2")         -- Cleaner light text color
+-- Core colors for text and backgrounds - Optimized for transparent terminals
+Color.new("white", "#e6e6e6")         -- Softer white for better transparency
 Color.new("superwhite", "#ffffff")     -- Pure white for primary text
 Color.new("black", "#000000")         -- Black for active status line text
-Color.new("darkgray", "#3c3c3c")      -- Better contrast dark gray
-Color.new("silver", "#c5c5c5")        -- Brighter silver for better visibility
-Color.new("silver_text", "#e0e0e0")   -- Cleaner silver for inactive status line text
+Color.new("darkgray", "#4a4a4a")      -- Better contrast for transparent backgrounds
+Color.new("silver", "#b8b8b8")        -- Softer silver for better readability
+Color.new("silver_text", "#d0d0d0")   -- Cleaner silver for inactive elements
 Color.new("dark_blue_gray", "#2a2a2a") -- Slightly lighter for better contrast
-Color.new("transparent", "#000000")   -- Transparent background support (will be overridden)
+Color.new("transparent", "#000000")   -- Transparent background support
 
--- Enhanced accent colors for better syntax highlighting
-Color.new("red", "#ff6b6b")          -- More vibrant red for errors
+-- Enhanced accent colors optimized for programming languages
+Color.new("red", "#ff5555")          -- Vibrant red for errors (better contrast)
 Color.new("pink", "#ff79c6")         -- Modern pink for strings
-Color.new("green", "#a9b665")        -- Brighter green for success
-Color.new("yellow", "#f1fa8c")       -- More vibrant yellow for keywords
-Color.new("blue", "#7daea3")         -- Enhanced blue for types
-Color.new("aqua", "#89b482")         -- Brighter aqua for highlights
-Color.new("cyan", "#7daea3")         -- Enhanced cyan for documentation
-Color.new("purple", "#b16286")       -- More vibrant purple for classes
+Color.new("green", "#50fa7b")         -- Brighter green for success
+Color.new("yellow", "#f1fa8c")       -- Vibrant yellow for keywords
+Color.new("blue", "#7aa2f7")         -- Enhanced blue for types
+Color.new("aqua", "#7dcfff")         -- Brighter aqua for highlights
+Color.new("cyan", "#7dcfff")         -- Enhanced cyan for documentation
+Color.new("purple", "#bb9af7")       -- Vibrant purple for classes
 Color.new("violet", "#c678dd")       -- Enhanced violet for operators
-Color.new("orange", "#d8a657")       -- Brighter orange for constants
+Color.new("orange", "#ff9e64")       -- Brighter orange for constants
 Color.new("brown", "#d4a574")        -- Warmer brown for properties
 
 -- Enhanced comment and utility colors
-Color.new("seagreen", "#6a6a6a")     -- Better contrast seagreen for comments
-Color.new("turquoise", "#5f8787")    -- More distinct turquoise for unused text
+Color.new("seagreen", "#6272a4")     -- Better contrast for comments
+Color.new("turquoise", "#2ac3de")    -- More distinct turquoise for unused text
 
 -- Enhanced editor background - Slightly lighter for better contrast
 local background_string = "#1a1a1a"  -- Lighter background for better contrast
@@ -52,11 +52,11 @@ Color.new("gray0", background_string)
 -- Base editor group (supports transparency)
 Group.new("Normal", c.superwhite, c.transparent) -- Default text with transparent background
 
--- Enhanced Status Line and UI Elements with better contrast
-Group.new("StatusLine", c.superwhite, c.dark_blue_gray) -- Clean white text on dark background
-Group.new("StatusLineNC", c.silver_text, c.darkgray, s.none) -- Subtle inactive status line
-Group.new("StatusLineTerm", c.superwhite, c.dark_blue_gray) -- Terminal status line
-Group.new("StatusLineTermNC", c.silver_text, c.darkgray, s.none) -- Inactive terminal status line
+-- Enhanced Status Line and UI Elements with transparency
+Group.new("StatusLine", c.superwhite, c.transparent) -- Clean white text on transparent background
+Group.new("StatusLineNC", c.silver_text, c.transparent, s.none) -- Subtle inactive status line
+Group.new("StatusLineTerm", c.superwhite, c.transparent) -- Terminal status line
+Group.new("StatusLineTermNC", c.silver_text, c.transparent, s.none) -- Inactive terminal status line
 
 -- Enhanced line numbers and cursor
 Group.new("LineNr", c.seagreen, c.transparent) -- Blue-gray line numbers for better contrast
@@ -75,15 +75,15 @@ Group.new("IncSearch", c.black, c.orange) -- Black text on orange
 Group.new("CurSearch", c.black, c.green) -- Black text on green
 Group.new("MatchParen", c.black, c.cyan, s.bold) -- Bold matching parentheses
 
--- Enhanced popup menus
-Group.new("Pmenu", c.superwhite, c.dark_blue_gray) -- Popup menu
+-- Enhanced popup menus with transparency
+Group.new("Pmenu", c.superwhite, c.transparent) -- Popup menu
 Group.new("PmenuSel", c.black, c.blue) -- Black text on blue for better contrast
-Group.new("PmenuSbar", nil, c.darkgray) -- Popup menu scrollbar
+Group.new("PmenuSbar", nil, c.transparent) -- Popup menu scrollbar
 Group.new("PmenuThumb", nil, c.silver) -- Popup menu thumb
 
--- Enhanced tabs
-Group.new("TabLine", c.silver_text, c.darkgray) -- Tab line
-Group.new("TabLineFill", c.silver, c.darkgray) -- Tab line fill
+-- Enhanced tabs with transparency
+Group.new("TabLine", c.silver_text, c.transparent) -- Tab line
+Group.new("TabLineFill", c.silver, c.transparent) -- Tab line fill
 Group.new("TabLineSel", c.black, c.blue, s.bold) -- Black text on blue for selected tab
 
 -- Enhanced windows and splits
@@ -131,20 +131,68 @@ Group.new("@function.call.lua", c.blue, nil, s.bold)   -- Bold Lua function call
 Group.new("@function.builtin.lua", c.yellow, nil, s.bold) -- Bold Lua built-in functions
 
 -- =====================
+-- Language-Specific Syntax Highlighting
+-- =====================
+
+-- C/C++ specific highlights
+Group.new("@function.call.c", c.blue, nil, s.bold)      -- Bold C function calls
+Group.new("@function.call.cpp", c.blue, nil, s.bold)   -- Bold C++ function calls
+Group.new("@type.qualifier.c", c.purple, nil, s.bold)  -- Bold C type qualifiers
+Group.new("@type.qualifier.cpp", c.purple, nil, s.bold) -- Bold C++ type qualifiers
+Group.new("@namespace.cpp", c.blue, nil, s.bold)        -- Bold C++ namespaces
+Group.new("@storageclass.cpp", c.orange, nil, s.bold) -- Bold C++ storage classes
+
+-- Python specific highlights
+Group.new("@function.call.python", c.blue, nil, s.bold) -- Bold Python function calls
+Group.new("@function.builtin.python", c.yellow, nil, s.bold) -- Bold Python built-ins
+Group.new("@decorator.python", c.purple, nil, s.bold)   -- Bold Python decorators
+Group.new("@parameter.python", c.orange, nil, s.none)  -- Python parameters
+Group.new("@self.python", c.cyan, nil, s.bold)         -- Bold Python self
+
+-- Rust specific highlights
+Group.new("@function.call.rust", c.blue, nil, s.bold)  -- Bold Rust function calls
+Group.new("@lifetime.rust", c.purple, nil, s.bold)     -- Bold Rust lifetimes
+Group.new("@attribute.rust", c.pink, nil, s.bold)      -- Bold Rust attributes
+Group.new("@macro.rust", c.orange, nil, s.bold)        -- Bold Rust macros
+Group.new("@storageclass.rust", c.cyan, nil, s.bold)    -- Bold Rust storage classes
+
+-- Go specific highlights
+Group.new("@function.call.go", c.blue, nil, s.bold)    -- Bold Go function calls
+Group.new("@function.builtin.go", c.yellow, nil, s.bold) -- Bold Go built-ins
+Group.new("@type.go", c.blue, nil, s.bold)             -- Bold Go types
+Group.new("@storageclass.go", c.orange, nil, s.bold)   -- Bold Go storage classes
+
+-- TypeScript/JavaScript specific highlights
+Group.new("@function.call.typescript", c.blue, nil, s.bold) -- Bold TS function calls
+Group.new("@function.call.javascript", c.blue, nil, s.bold) -- Bold JS function calls
+Group.new("@function.builtin.typescript", c.yellow, nil, s.bold) -- Bold TS built-ins
+Group.new("@function.builtin.javascript", c.yellow, nil, s.bold) -- Bold JS built-ins
+Group.new("@decorator.typescript", c.purple, nil, s.bold) -- Bold TS decorators
+Group.new("@parameter.typescript", c.orange, nil, s.none) -- TS parameters
+Group.new("@parameter.javascript", c.orange, nil, s.none) -- JS parameters
+
+-- Java specific highlights
+Group.new("@function.call.java", c.blue, nil, s.bold)  -- Bold Java function calls
+Group.new("@function.builtin.java", c.yellow, nil, s.bold) -- Bold Java built-ins
+Group.new("@annotation.java", c.purple, nil, s.bold)    -- Bold Java annotations
+Group.new("@type.java", c.blue, nil, s.bold)          -- Bold Java types
+Group.new("@storageclass.java", c.orange, nil, s.bold) -- Bold Java storage classes
+
+-- =====================
 -- Plugin Integration
 -- =====================
 
--- Enhanced Telescope with better contrast
-Group.new("TelescopePrompt", c.superwhite, c.dark_blue_gray)           -- Telescope prompt
-Group.new("TelescopeResults", c.superwhite, c.background)            -- Telescope results
-Group.new("TelescopePreview", c.superwhite, c.background)              -- Telescope preview
+-- Enhanced Telescope with transparency
+Group.new("TelescopePrompt", c.superwhite, c.transparent)           -- Telescope prompt
+Group.new("TelescopeResults", c.superwhite, c.transparent)            -- Telescope results
+Group.new("TelescopePreview", c.superwhite, c.transparent)              -- Telescope preview
 Group.new("TelescopeSelection", c.black, c.blue)                      -- Black text on blue for better contrast
 Group.new("TelescopeSelectionCaret", c.blue, c.blue)                   -- Blue selection caret
 Group.new("TelescopeMatching", c.yellow, nil, s.bold)                 -- Bold matching text
-Group.new("TelescopeBorder", c.blue, c.background)                     -- Blue borders for consistency
-Group.new("TelescopePromptBorder", c.blue, c.dark_blue_gray)          -- Blue prompt border
-Group.new("TelescopeResultsBorder", c.blue, c.background)            -- Blue results border
-Group.new("TelescopePreviewBorder", c.blue, c.background)             -- Blue preview border
+Group.new("TelescopeBorder", c.blue, c.transparent)                     -- Blue borders for consistency
+Group.new("TelescopePromptBorder", c.blue, c.transparent)          -- Blue prompt border
+Group.new("TelescopeResultsBorder", c.blue, c.transparent)            -- Blue results border
+Group.new("TelescopePreviewBorder", c.blue, c.transparent)             -- Blue preview border
 
 -- Enhanced LSP Diagnostics with better contrast
 Group.new("LspDiagnosticsError", c.red, nil, s.bold)                  -- Bold LSP errors
@@ -161,8 +209,8 @@ Group.new("LspReferenceRead", nil, c.blue:dark(0.3), s.none)          -- Blue re
 Group.new("LspReferenceWrite", nil, c.blue:dark(0.3), s.bold)        -- Bold blue write references
 Group.new("LspReferenceText", nil, c.blue:dark(0.3), s.none)         -- Blue text references
 
--- Enhanced NvimTree with better contrast
-Group.new("NvimTreeNormal", c.superwhite, c.background)              -- NvimTree normal
+-- Enhanced NvimTree with transparency
+Group.new("NvimTreeNormal", c.superwhite, c.transparent)              -- NvimTree normal
 Group.new("NvimTreeFolderName", c.blue, nil, s.bold)                 -- Bold folder names
 Group.new("NvimTreeOpenedFolderName", c.blue, nil, s.bold)           -- Bold opened folders
 Group.new("NvimTreeEmptyFolderName", c.silver, nil, s.none)           -- Empty folders
@@ -175,11 +223,11 @@ Group.new("NvimTreeGitDirty", c.red, nil, s.bold)                     -- Bold gi
 Group.new("NvimTreeGitStaged", c.green, nil, s.bold)                 -- Bold git staged files
 Group.new("NvimTreeGitNew", c.orange, nil, s.bold)                  -- Bold git new files
 
--- Enhanced BufferLine with better contrast
-Group.new("BufferLineFill", c.silver, c.darkgray)                     -- Buffer line fill
-Group.new("BufferLineBackground", c.silver_text, c.darkgray)         -- Inactive buffers
+-- Enhanced BufferLine with transparency
+Group.new("BufferLineFill", c.silver, c.transparent)                     -- Buffer line fill
+Group.new("BufferLineBackground", c.silver_text, c.transparent)         -- Inactive buffers
 Group.new("BufferLineBufferSelected", c.black, c.blue)               -- Black text on blue for selected buffer
-Group.new("BufferLineBufferVisible", c.superwhite, c.dark_blue_gray)  -- Visible buffers
+Group.new("BufferLineBufferVisible", c.superwhite, c.transparent)  -- Visible buffers
 Group.new("BufferLineIndicatorSelected", c.blue, c.blue)              -- Blue selected indicator
 Group.new("BufferLineIndicatorVisible", c.blue, c.blue)               -- Blue visible indicator
 
@@ -192,13 +240,15 @@ Group.new("IndentBlanklineContextStart", c.blue, nil, s.underline)   -- Blue con
 -- =====================
 -- Enhanced CustomBuddy Notes
 -- =====================
--- 1. Enhanced color palette with better contrast and vibrancy
--- 2. Improved background (#1a1a1a) for better readability
--- 3. Bold styling throughout for better code navigation
--- 4. Blue accent theme for consistency across all UI elements
--- 5. Enhanced transparency support for modern terminal setups
--- 6. Comprehensive plugin integration with improved contrast
--- 7. Extended syntax highlighting with bold keywords and functions
+-- 1. Optimized color palette for transparent terminal backgrounds
+-- 2. Full transparency support across all UI elements
+-- 3. Enhanced contrast ratios for better readability
+-- 4. Language-specific syntax highlighting for C, C++, Python, Rust, Go, TypeScript, JavaScript, Java
+-- 5. Bold styling throughout for better code navigation
+-- 6. Blue accent theme for consistency across all UI elements
+-- 7. Comprehensive plugin integration with transparency
 -- 8. Professional appearance suitable for long coding sessions
 -- 9. Better visual hierarchy with improved color contrast ratios
 -- 10. Maintains warm, comfortable character while improving usability
+-- 11. Perfect for transparent terminal setups with excellent readability
+-- 12. Enhanced color harmony for better eye comfort during long coding sessions
