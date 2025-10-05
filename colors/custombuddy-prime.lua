@@ -15,32 +15,32 @@ local s = colorbuddy.styles
 -- Prime-Inspired Color Palette
 -- =====================
 
--- Core colors - Authentic Gruvbox colors
-Color.new("white", "#ebdbb2")         -- Gruvbox light text
-Color.new("superwhite", "#ffffff")     -- Pure white
+-- Core colors - Muted Gruvbox colors
+Color.new("white", "#d4a574")         -- Muted Gruvbox light text
+Color.new("superwhite", "#ebdbb2")     -- Soft white
 Color.new("black", "#000000")         -- Pure black
 Color.new("darkgray", "#3c3836")      -- Gruvbox dark gray
-Color.new("silver", "#a89984")        -- Gruvbox silver
-Color.new("silver_text", "#a89984")   -- Gruvbox silver text
+Color.new("silver", "#8a8a8a")        -- Muted silver
+Color.new("silver_text", "#8a8a8a")   -- Muted silver text
 Color.new("dark_blue_gray", "#282828") -- Gruvbox dark background
 Color.new("transparent", "#000000")   -- Transparent background support
 
--- Authentic Gruvbox accent colors
-Color.new("red", "#fb4934")          -- Gruvbox red
-Color.new("pink", "#d3869b")         -- Gruvbox pink
-Color.new("green", "#b8bb26")        -- Gruvbox green
-Color.new("yellow", "#fabd2f")       -- Gruvbox yellow
-Color.new("blue", "#83a598")         -- Gruvbox blue
-Color.new("aqua", "#8ec07c")         -- Gruvbox aqua
-Color.new("cyan", "#8ec07c")         -- Gruvbox cyan
-Color.new("purple", "#b16286")       -- Gruvbox purple
-Color.new("violet", "#b16286")       -- Gruvbox violet
-Color.new("orange", "#fe8019")       -- Gruvbox orange
-Color.new("brown", "#d65d0e")        -- Gruvbox brown
+-- Muted Gruvbox accent colors
+Color.new("red", "#d75f5f")          -- Muted red
+Color.new("pink", "#a89984")         -- Soft pink
+Color.new("green", "#8fbc8f")         -- Muted green
+Color.new("yellow", "#d4a574")       -- Soft yellow
+Color.new("blue", "#6b8bb3")         -- Muted blue
+Color.new("aqua", "#6b8bb3")         -- Muted aqua
+Color.new("cyan", "#6b8bb3")         -- Muted cyan
+Color.new("purple", "#a89984")       -- Soft purple
+Color.new("violet", "#a89984")       -- Soft violet
+Color.new("orange", "#d4a574")       -- Soft orange
+Color.new("brown", "#a89984")        -- Soft brown
 
--- Gruvbox comment colors
-Color.new("seagreen", "#928374")     -- Gruvbox gray comments
-Color.new("turquoise", "#8ec07c")    -- Gruvbox turquoise
+-- Muted Gruvbox comment colors
+Color.new("seagreen", "#5a5a5a")     -- Muted gray comments
+Color.new("turquoise", "#6b8bb3")    -- Muted turquoise
 
 -- Editor background - Authentic Gruvbox dark
 local background_string = "#282828"  -- Gruvbox dark background

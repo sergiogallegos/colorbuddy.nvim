@@ -15,32 +15,32 @@ local s = colorbuddy.styles
 -- Rose Pine Color Palette
 -- =====================
 
--- Core colors - Authentic Rose Pine colors
-Color.new("white", "#e0def4")         -- Rose Pine light text
-Color.new("superwhite", "#ffffff")     -- Pure white for primary text
+-- Core colors - Muted Rose Pine colors
+Color.new("white", "#c4a7e7")         -- Muted Rose Pine light text
+Color.new("superwhite", "#e0def4")     -- Soft white for primary text
 Color.new("black", "#000000")         -- Pure black
 Color.new("darkgray", "#403d52")      -- Rose Pine dark gray
-Color.new("silver", "#908caa")        -- Rose Pine silver
-Color.new("silver_text", "#908caa")   -- Rose Pine silver text
+Color.new("silver", "#8a8a8a")         -- Muted silver
+Color.new("silver_text", "#8a8a8a")   -- Muted silver text
 Color.new("dark_blue_gray", "#1f1d2e") -- Rose Pine dark background
 Color.new("transparent", "#000000")   -- Transparent background support
 
--- Authentic Rose Pine accent colors
-Color.new("red", "#eb6f92")          -- Rose Pine red for errors
-Color.new("pink", "#f6c177")         -- Rose Pine pink for strings
-Color.new("green", "#9ccfd8")        -- Rose Pine green for success
-Color.new("yellow", "#f6c177")       -- Rose Pine yellow for keywords
-Color.new("blue", "#31748f")         -- Rose Pine blue for types
-Color.new("aqua", "#9ccfd8")         -- Rose Pine aqua for highlights
-Color.new("cyan", "#9ccfd8")         -- Rose Pine cyan for documentation
-Color.new("purple", "#c4a7e7")       -- Rose Pine purple for classes
-Color.new("violet", "#c4a7e7")       -- Rose Pine violet for operators
-Color.new("orange", "#f6c177")       -- Rose Pine orange for constants
-Color.new("brown", "#e0def4")        -- Rose Pine brown for properties
+-- Muted Rose Pine accent colors
+Color.new("red", "#d75f5f")          -- Muted red for errors
+Color.new("pink", "#a89984")         -- Soft pink for strings
+Color.new("green", "#8fbc8f")         -- Muted green for success
+Color.new("yellow", "#d4a574")       -- Soft yellow for keywords
+Color.new("blue", "#6b8bb3")         -- Muted blue for types
+Color.new("aqua", "#6b8bb3")         -- Muted aqua for highlights
+Color.new("cyan", "#6b8bb3")         -- Muted cyan for documentation
+Color.new("purple", "#a89984")       -- Soft purple for classes
+Color.new("violet", "#a89984")       -- Soft violet for operators
+Color.new("orange", "#d4a574")       -- Soft orange for constants
+Color.new("brown", "#a89984")        -- Soft brown for properties
 
--- Rose Pine comment and utility colors
-Color.new("seagreen", "#6e6a86")     -- Rose Pine gray for comments
-Color.new("turquoise", "#9ccfd8")    -- Rose Pine turquoise for unused text
+-- Muted Rose Pine comment and utility colors
+Color.new("seagreen", "#5a5a5a")     -- Muted gray for comments
+Color.new("turquoise", "#6b8bb3")    -- Muted turquoise for unused text
 
 -- Editor background - Authentic Rose Pine dark
 local background_string = "#191724"  -- Rose Pine dark background

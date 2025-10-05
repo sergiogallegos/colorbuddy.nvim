@@ -15,32 +15,32 @@ local s = colorbuddy.styles
 -- Cursor IDE Color Palette
 -- =====================
 
--- Core colors - Authentic Cursor IDE colors
-Color.new("white", "#e6e6e6")         -- Cursor IDE text color
-Color.new("superwhite", "#ffffff")     -- Pure white for primary text
+-- Core colors - Muted Cursor IDE colors
+Color.new("white", "#d0d0d0")         -- Muted Cursor IDE text color
+Color.new("superwhite", "#e6e6e6")     -- Soft white for primary text
 Color.new("black", "#000000")         -- Pure black
 Color.new("darkgray", "#404040")      -- Cursor IDE dark gray
-Color.new("silver", "#b3b3b3")        -- Cursor IDE silver
-Color.new("silver_text", "#cccccc")   -- Light silver text
+Color.new("silver", "#8a8a8a")         -- Muted silver
+Color.new("silver_text", "#8a8a8a")   -- Muted silver text
 Color.new("dark_blue_gray", "#1e1e1e") -- Cursor IDE dark background
 Color.new("transparent", "#000000")   -- Transparent background support
 
--- Authentic Cursor IDE accent colors
-Color.new("red", "#f97583")          -- Cursor IDE red for errors
-Color.new("pink", "#ff7ab2")         -- Cursor IDE pink for strings
-Color.new("green", "#85b378")        -- Cursor IDE green for success
-Color.new("yellow", "#d4a574")       -- Cursor IDE yellow for keywords
-Color.new("blue", "#7aa2f7")         -- Cursor IDE blue for types
-Color.new("aqua", "#7dcfff")         -- Cursor IDE aqua for highlights
-Color.new("cyan", "#7dcfff")         -- Cursor IDE cyan for documentation
-Color.new("purple", "#bb9af7")       -- Cursor IDE purple for classes
-Color.new("violet", "#c3a6ff")       -- Cursor IDE violet for operators
-Color.new("orange", "#ff9e64")       -- Cursor IDE orange for constants
-Color.new("brown", "#a9b1d6")        -- Cursor IDE brown for properties
+-- Muted Cursor IDE accent colors
+Color.new("red", "#d75f5f")          -- Muted red for errors
+Color.new("pink", "#a89984")         -- Soft pink for strings
+Color.new("green", "#8fbc8f")         -- Muted green for success
+Color.new("yellow", "#d4a574")       -- Soft yellow for keywords
+Color.new("blue", "#6b8bb3")         -- Muted blue for types
+Color.new("aqua", "#6b8bb3")         -- Muted aqua for highlights
+Color.new("cyan", "#6b8bb3")         -- Muted cyan for documentation
+Color.new("purple", "#a89984")       -- Soft purple for classes
+Color.new("violet", "#a89984")       -- Soft violet for operators
+Color.new("orange", "#d4a574")       -- Soft orange for constants
+Color.new("brown", "#a89984")        -- Soft brown for properties
 
--- Cursor IDE comment and utility colors
-Color.new("seagreen", "#565f89")     -- Cursor IDE blue-gray for comments
-Color.new("turquoise", "#2ac3de")    -- Cursor IDE turquoise for unused text
+-- Muted Cursor IDE comment and utility colors
+Color.new("seagreen", "#5a5a5a")     -- Muted gray for comments
+Color.new("turquoise", "#6b8bb3")    -- Muted turquoise for unused text
 
 -- Editor background - Authentic Cursor IDE dark
 local background_string = "#1e1e1e"  -- Cursor IDE dark background

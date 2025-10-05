@@ -15,32 +15,32 @@ local s = colorbuddy.styles
 -- TJ-Inspired Color Palette
 -- =====================
 
--- Core colors - Authentic Catppuccin Mocha colors
-Color.new("white", "#cdd6f4")         -- Catppuccin light text
-Color.new("superwhite", "#ffffff")     -- Pure white
+-- Core colors - Muted Catppuccin Mocha colors
+Color.new("white", "#a6adc8")         -- Muted Catppuccin light text
+Color.new("superwhite", "#cdd6f4")     -- Soft white
 Color.new("black", "#000000")         -- Pure black
 Color.new("darkgray", "#45475a")      -- Catppuccin dark gray
-Color.new("silver", "#a6adc8")        -- Catppuccin silver
-Color.new("silver_text", "#a6adc8")   -- Catppuccin silver text
+Color.new("silver", "#8a8a8a")        -- Muted silver
+Color.new("silver_text", "#8a8a8a")   -- Muted silver text
 Color.new("dark_blue_gray", "#1e1e2e") -- Catppuccin dark background
 Color.new("transparent", "#000000")   -- Transparent background support
 
--- Authentic Catppuccin Mocha accent colors
-Color.new("red", "#f38ba8")          -- Catppuccin red
-Color.new("pink", "#f5c2e7")         -- Catppuccin pink
-Color.new("green", "#a6e3a1")        -- Catppuccin green
-Color.new("yellow", "#f9e2af")       -- Catppuccin yellow
-Color.new("blue", "#89b4fa")         -- Catppuccin blue
-Color.new("aqua", "#94e2d5")         -- Catppuccin aqua
-Color.new("cyan", "#89dceb")         -- Catppuccin cyan
-Color.new("purple", "#cba6f7")       -- Catppuccin purple
-Color.new("violet", "#cba6f7")       -- Catppuccin violet
-Color.new("orange", "#fab387")       -- Catppuccin orange
-Color.new("brown", "#f5c2e7")        -- Catppuccin brown
+-- Muted Catppuccin Mocha accent colors
+Color.new("red", "#d75f5f")          -- Muted red
+Color.new("pink", "#a89984")         -- Soft pink
+Color.new("green", "#8fbc8f")         -- Muted green
+Color.new("yellow", "#d4a574")       -- Soft yellow
+Color.new("blue", "#6b8bb3")         -- Muted blue
+Color.new("aqua", "#6b8bb3")         -- Muted aqua
+Color.new("cyan", "#6b8bb3")         -- Muted cyan
+Color.new("purple", "#a89984")       -- Soft purple
+Color.new("violet", "#a89984")       -- Soft violet
+Color.new("orange", "#d4a574")       -- Soft orange
+Color.new("brown", "#a89984")        -- Soft brown
 
--- Catppuccin comment colors
-Color.new("seagreen", "#6c7086")     -- Catppuccin gray comments
-Color.new("turquoise", "#89dceb")    -- Catppuccin turquoise
+-- Muted Catppuccin comment colors
+Color.new("seagreen", "#5a5a5a")     -- Muted gray comments
+Color.new("turquoise", "#6b8bb3")    -- Muted turquoise
 
 -- Editor background - Authentic Catppuccin Mocha dark
 local background_string = "#1e1e2e"  -- Catppuccin Mocha dark background

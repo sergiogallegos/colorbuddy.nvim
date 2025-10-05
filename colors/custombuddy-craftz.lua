@@ -15,32 +15,32 @@ local s = colorbuddy.styles
 -- Craftz-Inspired Color Palette
 -- =====================
 
--- Core colors - Authentic TokyoNight colors
-Color.new("white", "#a9b1d6")         -- TokyoNight light text
-Color.new("superwhite", "#ffffff")     -- Pure white for primary text
+-- Core colors - Muted TokyoNight colors
+Color.new("white", "#9aa5ce")         -- Muted TokyoNight light text
+Color.new("superwhite", "#a9b1d6")     -- Soft white for primary text
 Color.new("black", "#000000")         -- Pure black
-Color.new("darkgray", "#414868")      -- TokyoNight dark gray
-Color.new("silver", "#9aa5ce")        -- TokyoNight silver
-Color.new("silver_text", "#9aa5ce")   -- TokyoNight silver text
+Color.new("darkgray", "#3c3c3c")      -- Muted dark gray
+Color.new("silver", "#8a8a8a")        -- Muted silver
+Color.new("silver_text", "#8a8a8a")   -- Muted silver text
 Color.new("dark_blue_gray", "#1a1b26") -- TokyoNight dark background
 Color.new("transparent", "#000000")   -- Transparent background support
 
--- Authentic TokyoNight accent colors
-Color.new("red", "#f7768e")          -- TokyoNight red for errors
-Color.new("pink", "#bb9af7")         -- TokyoNight pink for strings
-Color.new("green", "#9ece6a")        -- TokyoNight green for success
-Color.new("yellow", "#e0af68")       -- TokyoNight yellow for keywords
-Color.new("blue", "#7aa2f7")         -- TokyoNight blue for types
-Color.new("aqua", "#7dcfff")         -- TokyoNight aqua for highlights
-Color.new("cyan", "#7dcfff")         -- TokyoNight cyan for documentation
-Color.new("purple", "#bb9af7")       -- TokyoNight purple for classes
-Color.new("violet", "#bb9af7")       -- TokyoNight violet for operators
-Color.new("orange", "#ff9e64")       -- TokyoNight orange for constants
-Color.new("brown", "#d4a574")        -- TokyoNight brown for properties
+-- Muted TokyoNight accent colors
+Color.new("red", "#d75f5f")          -- Muted red for errors
+Color.new("pink", "#a89984")         -- Soft pink for strings
+Color.new("green", "#8fbc8f")         -- Muted green for success
+Color.new("yellow", "#d4a574")       -- Soft yellow for keywords
+Color.new("blue", "#6b8bb3")         -- Muted blue for types
+Color.new("aqua", "#6b8bb3")         -- Muted aqua for highlights
+Color.new("cyan", "#6b8bb3")         -- Muted cyan for documentation
+Color.new("purple", "#a89984")       -- Soft purple for classes
+Color.new("violet", "#a89984")       -- Soft violet for operators
+Color.new("orange", "#d4a574")       -- Soft orange for constants
+Color.new("brown", "#a89984")        -- Soft brown for properties
 
--- TokyoNight comment colors
-Color.new("seagreen", "#565f89")     -- TokyoNight blue-gray for comments
-Color.new("turquoise", "#2ac3de")    -- TokyoNight turquoise for unused text
+-- Muted TokyoNight comment colors
+Color.new("seagreen", "#4a4a4a")     -- Muted gray for comments
+Color.new("turquoise", "#6b8bb3")    -- Muted turquoise for unused text
 
 -- Editor background - Authentic TokyoNight dark
 local background_string = "#1a1b26"  -- TokyoNight dark background

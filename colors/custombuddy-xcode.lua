@@ -15,32 +15,32 @@ local s = colorbuddy.styles
 -- Xcode Color Palette
 -- =====================
 
--- Core colors - Authentic Xcode dark theme
-Color.new("white", "#f2f2f7")         -- Xcode light text
-Color.new("superwhite", "#ffffff")     -- Pure white for primary text
+-- Core colors - Muted Xcode dark theme
+Color.new("white", "#d0d0d0")         -- Muted Xcode light text
+Color.new("superwhite", "#f2f2f7")     -- Soft white for primary text
 Color.new("black", "#000000")         -- Pure black
 Color.new("darkgray", "#3a3a3c")      -- Xcode dark gray
-Color.new("silver", "#8e8e93")        -- Xcode silver
-Color.new("silver_text", "#8e8e93")   -- Xcode silver text
+Color.new("silver", "#8a8a8a")         -- Muted silver
+Color.new("silver_text", "#8a8a8a")   -- Muted silver text
 Color.new("dark_blue_gray", "#1c1c1e") -- Xcode dark background
 Color.new("transparent", "#000000")   -- Transparent background support
 
--- Authentic Xcode accent colors - Apple system colors
-Color.new("red", "#ff3b30")          -- Xcode red for errors
-Color.new("pink", "#ff2d92")         -- Xcode pink for strings
-Color.new("green", "#34c759")        -- Xcode green for success
-Color.new("yellow", "#ffcc00")       -- Xcode yellow for keywords
-Color.new("blue", "#007aff")         -- Xcode blue for types
-Color.new("aqua", "#5ac8fa")         -- Xcode aqua for highlights
-Color.new("cyan", "#5ac8fa")         -- Xcode cyan for documentation
-Color.new("purple", "#af52de")       -- Xcode purple for classes
-Color.new("violet", "#af52de")       -- Xcode violet for operators
-Color.new("orange", "#ff9500")       -- Xcode orange for constants
-Color.new("brown", "#a2845e")        -- Xcode brown for properties
+-- Muted Xcode accent colors - Apple system colors
+Color.new("red", "#d75f5f")          -- Muted red for errors
+Color.new("pink", "#a89984")         -- Soft pink for strings
+Color.new("green", "#8fbc8f")         -- Muted green for success
+Color.new("yellow", "#d4a574")       -- Soft yellow for keywords
+Color.new("blue", "#6b8bb3")         -- Muted blue for types
+Color.new("aqua", "#6b8bb3")         -- Muted aqua for highlights
+Color.new("cyan", "#6b8bb3")         -- Muted cyan for documentation
+Color.new("purple", "#a89984")       -- Soft purple for classes
+Color.new("violet", "#a89984")       -- Soft violet for operators
+Color.new("orange", "#d4a574")       -- Soft orange for constants
+Color.new("brown", "#a89984")        -- Soft brown for properties
 
--- Xcode comment and utility colors
-Color.new("seagreen", "#8e8e93")     -- Xcode gray for comments
-Color.new("turquoise", "#5ac8fa")    -- Xcode turquoise for unused text
+-- Muted Xcode comment and utility colors
+Color.new("seagreen", "#5a5a5a")     -- Muted gray for comments
+Color.new("turquoise", "#6b8bb3")    -- Muted turquoise for unused text
 
 -- Editor background - Authentic Xcode dark
 local background_string = "#1c1c1e"  -- Xcode dark background

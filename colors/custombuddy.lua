@@ -13,32 +13,32 @@ local s = colorbuddy.styles
 -- Define Color Palette
 -- =====================
 
--- Core colors for text and backgrounds - Optimized for transparent terminals
-Color.new("white", "#e6e6e6")         -- Softer white for better transparency
-Color.new("superwhite", "#ffffff")     -- Pure white for primary text
+-- Core colors for text and backgrounds - Muted and comfortable
+Color.new("white", "#d0d0d0")         -- Muted white for better eye comfort
+Color.new("superwhite", "#e8e8e8")     -- Soft white for primary text
 Color.new("black", "#000000")         -- Black for active status line text
-Color.new("darkgray", "#4a4a4a")      -- Better contrast for transparent backgrounds
-Color.new("silver", "#b8b8b8")        -- Softer silver for better readability
-Color.new("silver_text", "#d0d0d0")   -- Cleaner silver for inactive elements
+Color.new("darkgray", "#404040")      -- Muted dark gray for better contrast
+Color.new("silver", "#a0a0a0")        -- Muted silver for better readability
+Color.new("silver_text", "#b8b8b8")   -- Soft silver for inactive elements
 Color.new("dark_blue_gray", "#2a2a2a") -- Slightly lighter for better contrast
 Color.new("transparent", "#000000")   -- Transparent background support
 
--- Enhanced accent colors optimized for programming languages
-Color.new("red", "#ff5555")          -- Vibrant red for errors (better contrast)
-Color.new("pink", "#ff79c6")         -- Modern pink for strings
-Color.new("green", "#50fa7b")         -- Brighter green for success
-Color.new("yellow", "#f1fa8c")       -- Vibrant yellow for keywords
-Color.new("blue", "#7aa2f7")         -- Enhanced blue for types
-Color.new("aqua", "#7dcfff")         -- Brighter aqua for highlights
-Color.new("cyan", "#7dcfff")         -- Enhanced cyan for documentation
-Color.new("purple", "#bb9af7")       -- Vibrant purple for classes
-Color.new("violet", "#c678dd")       -- Enhanced violet for operators
-Color.new("orange", "#ff9e64")       -- Brighter orange for constants
-Color.new("brown", "#d4a574")        -- Warmer brown for properties
+-- Muted accent colors for comfortable programming
+Color.new("red", "#d75f5f")          -- Muted red for errors
+Color.new("pink", "#d3869b")         -- Soft pink for strings
+Color.new("green", "#8fbc8f")         -- Muted green for success
+Color.new("yellow", "#d4a574")       -- Soft yellow for keywords
+Color.new("blue", "#6b8bb3")         -- Muted blue for types
+Color.new("aqua", "#7aa2f7")         -- Soft aqua for highlights
+Color.new("cyan", "#7aa2f7")         -- Muted cyan for documentation
+Color.new("purple", "#a89984")       -- Soft purple for classes
+Color.new("violet", "#b16286")       -- Muted violet for operators
+Color.new("orange", "#d4a574")       -- Soft orange for constants
+Color.new("brown", "#a89984")        -- Muted brown for properties
 
--- Enhanced comment and utility colors
-Color.new("seagreen", "#6272a4")     -- Better contrast for comments
-Color.new("turquoise", "#2ac3de")    -- More distinct turquoise for unused text
+-- Muted comment and utility colors
+Color.new("seagreen", "#5a5a5a")     -- Soft gray for comments
+Color.new("turquoise", "#6b8bb3")    -- Muted turquoise for unused text
 
 -- Enhanced editor background - Slightly lighter for better contrast
 local background_string = "#1a1a1a"  -- Lighter background for better contrast
